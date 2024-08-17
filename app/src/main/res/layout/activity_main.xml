@@ -14,24 +14,28 @@
 	              android:orientation="vertical"
 	              android:layout_gravity="center_vertical">
 		
-		<Button
+		<com.google.android.material.button.MaterialButton
 				android:id="@+id/btnLogin"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:padding="10dp"
 				android:layout_margin="10dp"
 				android:text="Login"
-				android:background="#FF5722"
+				style="@style/Widget.Material3.Button.IconButton.Filled"
+				android:background="@drawable/custom_btn"
 				android:textColor="#fff"/>
 		
-		<Button
+		<com.google.android.material.button.MaterialButton
 				android:id="@+id/btnRegister"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:padding="10dp"
 				android:layout_margin="10dp"
+				style="@style/Widget.Material3.Button.TonalButton"
+				
 				android:text="Register"
-				android:background="#FF5722"
+				android:background="@drawable/custom_btn"
+				
 				android:textColor="#fff"/>
 	
 	

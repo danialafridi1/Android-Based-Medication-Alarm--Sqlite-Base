@@ -14,7 +14,7 @@
 			android:padding="10dp"
 			android:layout_margin="10dp"
 			android:orientation="vertical"
-			android:background="#222"
+			android:background="@drawable/custom_btn"
 			android:layout_gravity="center_vertical">
 		
 		<TextView
@@ -58,17 +58,19 @@
 				android:padding="10dp"
 				android:layout_marginBottom="10dp"
 				android:text="Login"
-				android:background="#FF5722"
+				style="@style/Widget.Material3.Button.TonalButton"
+				android:background="@drawable/custom_btn"
 				android:textColor="#fff" />
 		
 		<Button
+				style="@style/Widget.Material3.Button.ElevatedButton"
+				android:background="@drawable/custom_btn"
 				android:id="@+id/btnRegister_user"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:padding="10dp"
 				android:layout_marginBottom="10dp"
 				android:text="Register"
-				android:background="#FF5722"
 				android:textColor="#fff" />
 	</LinearLayout>
 </LinearLayout>
