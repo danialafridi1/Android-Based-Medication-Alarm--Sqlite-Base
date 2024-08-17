@@ -7,38 +7,57 @@
 		android:layout_height="match_parent"
 		android:background="@drawable/bg"
 		tools:context=".MainActivity">
-	<LinearLayout android:layout_width="match_parent"
-	              android:layout_height="wrap_content"
+	
+	<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+	              android:orientation="vertical"
 	              android:padding="10dp"
 	              android:layout_margin="10dp"
-	              android:orientation="vertical"
-	              android:layout_gravity="center_vertical">
+	              android:layout_gravity="center_vertical"
+	              >
+		<TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+		          android:text="Welcome"
+		          android:padding="10dp"
+		          android:layout_margin="10dp"
+		          android:textColor="#222"
+		          android:gravity="center"
+		          android:textStyle="bold"
+		          android:textAllCaps="true"
+		          android:textSize="20sp"
+		          />
+		<LinearLayout android:layout_width="match_parent"
+		              android:layout_height="wrap_content"
+		              android:padding="10dp"
+		              android:layout_margin="10dp"
+		              android:orientation="horizontal"
+		              android:gravity="center"
+		              android:layout_gravity="center_vertical">
+			
+			<com.google.android.material.button.MaterialButton
+					android:id="@+id/btnLogin"
+					android:layout_width="120dp"
+					android:layout_height="wrap_content"
+					android:padding="10dp"
+					android:layout_margin="10dp"
+					android:text="Login"
+					style="@style/Widget.Material3.Button.IconButton.Filled"
+					android:background="@drawable/custom_btn"
+					android:textColor="#fff"/>
+			
+			<com.google.android.material.button.MaterialButton
+					android:id="@+id/btnRegister"
+					android:layout_width="120dp"
+					android:layout_height="wrap_content"
+					android:padding="10dp"
+					android:layout_margin="10dp"
+					style="@style/Widget.Material3.Button.TonalButton"
+					
+					android:text="Register"
+					android:background="@drawable/custom_btn"
+					
+					android:textColor="#fff"/>
 		
-		<com.google.android.material.button.MaterialButton
-				android:id="@+id/btnLogin"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="10dp"
-				android:layout_margin="10dp"
-				android:text="Login"
-				style="@style/Widget.Material3.Button.IconButton.Filled"
-				android:background="@drawable/custom_btn"
-				android:textColor="#fff"/>
 		
-		<com.google.android.material.button.MaterialButton
-				android:id="@+id/btnRegister"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="10dp"
-				android:layout_margin="10dp"
-				style="@style/Widget.Material3.Button.TonalButton"
-				
-				android:text="Register"
-				android:background="@drawable/custom_btn"
-				
-				android:textColor="#fff"/>
-	
-	
+		</LinearLayout>
 	</LinearLayout>
 
 </LinearLayout>
