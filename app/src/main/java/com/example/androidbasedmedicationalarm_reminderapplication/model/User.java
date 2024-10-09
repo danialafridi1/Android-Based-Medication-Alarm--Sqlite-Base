@@ -61,6 +61,15 @@ public class User {
         this.password = password;
     }
 
+    public User(int id, String name, String cnic, int age,String diseaseName) {
+        this.uid = id;
+        this.name = name;
+        this.age = age;
+        this.cnicNumber = cnic;
+        this.diseaseName=diseaseName;
+
+    }
+
     // Getters and Setters
     public int getUid() {
         return uid;
