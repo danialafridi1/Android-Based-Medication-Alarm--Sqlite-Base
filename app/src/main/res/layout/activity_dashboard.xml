@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
 		xmlns:android="http://schemas.android.com/apk/res/android"
 		xmlns:tools="http://schemas.android.com/tools"
 		xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,5 +7,57 @@
 		android:layout_height="match_parent"
 		android:background="@drawable/bg"
 		tools:context=".Dashboard">
+	
+	<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+	              android:orientation="vertical"
+	              android:padding="10dp"
+	              android:layout_margin="10dp"
+	              android:layout_gravity="center_vertical"
+	>
+		<TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+		          android:text="Welcome"
+		          android:padding="10dp"
+		          android:layout_margin="10dp"
+		          android:textColor="#222"
+		          android:gravity="center"
+		          android:textStyle="bold"
+		          android:textAllCaps="true"
+		          android:textSize="20sp"
+		/>
+		<LinearLayout android:layout_width="match_parent"
+		              android:layout_height="wrap_content"
+		              android:padding="10dp"
+		              android:layout_margin="10dp"
+		              android:orientation="horizontal"
+		              android:gravity="center"
+		              android:layout_gravity="center_vertical">
+			
+			<com.google.android.material.button.MaterialButton
+					android:id="@+id/btnAddMed"
+					android:layout_width="120dp"
+					android:layout_height="wrap_content"
+					android:padding="10dp"
+					android:layout_margin="10dp"
+					android:text="Add Medicine"
+					style="@style/Widget.Material3.Button.IconButton.Filled"
+					android:background="@drawable/custom_btn"
+					android:textColor="#fff"/>
+			
+			<com.google.android.material.button.MaterialButton
+					android:id="@+id/btnViewMed"
+					android:layout_width="120dp"
+					android:layout_height="wrap_content"
+					android:padding="10dp"
+					android:layout_margin="10dp"
+					style="@style/Widget.Material3.Button.TonalButton"
+					
+					android:text="View Medicine"
+					android:background="@drawable/custom_btn"
+					
+					android:textColor="#fff"/>
+		
+		
+		</LinearLayout>
+	</LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

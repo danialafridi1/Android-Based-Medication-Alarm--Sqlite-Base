@@ -1,3 +1,8 @@
 <resources>
 	<string name="app_name">Android Based Medication Alarm-reminder Application</string>
+	<string-array name="medicine_type_array">
+		<item>TAB</item>
+		<item>CAP</item>
+		<item>INJECTION</item>
+	</string-array>
 </resources>
